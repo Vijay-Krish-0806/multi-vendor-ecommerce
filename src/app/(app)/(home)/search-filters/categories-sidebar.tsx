@@ -77,7 +77,7 @@ const CategoriesSidebar = ({ open, onOpenChange, data }: Props) => {
         <ScrollArea>
           {parentCategories && (
             <button
-              className="w-full text-left p-4 hover:bg-black hover:text-white flex items-center text-base font-medium"
+              className="w-full text-left p-4 hover:bg-black hover:text-white flex items-center text-base font-medium cursor-pointer"
               onClick={handleBackClick}
             >
               <ChevronLeft className="size-4 mr-2" /> Back
