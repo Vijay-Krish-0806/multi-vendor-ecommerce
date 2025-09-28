@@ -5,6 +5,8 @@ import { Poppins } from "next/font/google";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+
+
 import { usePathname, useSearchParams } from "next/navigation";
 import { NavbarSidebar } from "./navbar-sidebar";
 import { useState } from "react";
@@ -79,13 +81,13 @@ export const Navbar = () => {
           variant={"secondary"}
           className="border-l border-t-0 border-r-0 px-12 h-full rounded-none bg-white hover:bg-pink-400 transition-colors text-lg"
         >
-          <Link href={"/sign-in"}>Login</Link>
+          <Link prefetch href={"/sign-in"}>Login</Link>
         </Button>
         <Button
           asChild
           className="border-l border-t-0 border-r-0 px-12 h-full rounded-none bg-black text-white hover:bg-pink-400 transition-colors hover:text-black text-lg"
         >
-          <Link href={"/sign-up"}>Start Selling</Link>
+          <Link prefetch href={"/sign-up"}>Start Selling</Link>
         </Button>
       </div>
 
